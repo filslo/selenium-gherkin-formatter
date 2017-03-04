@@ -1,0 +1,4 @@
+content gherkinformatter chrome/content/
+
+# Custom format
+overlay chrome://selenium-ide/content/selenium-ide-common.xul chrome://gherkinformatter/content/formats/Gherkinformat-loader.xul

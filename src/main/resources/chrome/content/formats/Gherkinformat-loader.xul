@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<overlay id="xml_format_loader_overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+         xmlns:html="http://www.w3.org/1999/xhtml">
+	<script type="application/x-javascript" src="chrome://selenium-ide/content/api.js"/>
+	<script type="application/x-javascript" src="chrome://gherkingformatter/content/gherkinformatter.js"/>
+	<html:script type="application/javascript">
+
+        var ide_api = new API();
+        ide_api.addPluginProvidedFormatter('gherkinformatter', 'Gherkin Formatter', 'chrome://gherkinformatter/content/formats/Gherkin-formatter.js');
+		    ide_api.addPlugin('selenium-gherkin-formatter@github');
+	</html:script>
+</overlay>
